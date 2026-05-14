@@ -36,20 +36,22 @@ npm run dev
 
 ## 🏗️ Структура проєкту
 
+```
 src/
 ├── components/
-│ ├── layout/ # Header, Sidebar, Bottom Navigation
-│ └── ui/ # Перевикористовувані компоненти
+│   ├── layout/      # Header, Sidebar, Bottom Navigation
+│   └── ui/          # Перевикористовувані компоненти
 ├── pages/
-│ ├── Home/ # Головна сторінка
-│ ├── Articles/ # Статті та окрема стаття
-│ ├── Calendar/ # Календар бджоляра
-│ ├── Diseases/ # Хвороби бджіл
-│ ├── Equipment/ # Обладнання пасічника
-│ └── Forum/ # Форум
-├── data/ # Статичні дані
-├── hooks/ # Власні React хуки
-└── types/ # TypeScript типи
+│   ├── Home/        # Головна сторінка
+│   ├── Articles/    # Статті та окрема стаття
+│   ├── Calendar/    # Календар бджоляра
+│   ├── Diseases/    # Хвороби бджіл
+│   ├── Equipment/   # Обладнання пасічника
+│   └── Forum/       # Форум
+├── data/            # Статичні дані
+├── hooks/           # Власні React хуки
+└── types/           # TypeScript типи
+```
 
 ## 📱 Адаптивність
 
