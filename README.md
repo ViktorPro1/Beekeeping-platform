@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+# 🐝 Бджільництво від А до Я
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Повна україномовна платформа для бджолярів — від початківця до професіонала.
 
-Currently, two official plugins are available:
+## 🌟 Можливості
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 📚 **Статті** — навчальні матеріали з усіх тем бджільництва
+- 📅 **Календар бджоляра** — що робити на пасіці кожного місяця
+- 🔬 **Хвороби та лікування** — довідник хвороб, симптоми та методи лікування
+- 🛠️ **Обладнання** — огляд вуликів, інструментів та інвентарю
+- 💬 **Форум** — питання та відповіді досвідчених пасічників
 
-## React Compiler
+## 🚀 Технології
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React 19](https://react.dev/) — UI бібліотека
+- [TypeScript](https://www.typescriptlang.org/) — типізація
+- [Vite](https://vitejs.dev/) — збірка та dev-сервер
+- [Tailwind CSS](https://tailwindcss.com/) — стилізація
+- [React Router](https://reactrouter.com/) — маршрутизація
 
-## Expanding the ESLint configuration
+## 📦 Встановлення
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Клонувати репозиторій
+git clone https://github.com/ViktorPro1/Beekeeping-platform.git
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Перейти в папку
+cd Beekeeping-platform
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Встановити залежності
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Запустити dev-сервер
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏗️ Структура проєкту
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+src/
+├── components/
+│ ├── layout/ # Header, Sidebar, Bottom Navigation
+│ └── ui/ # Перевикористовувані компоненти
+├── pages/
+│ ├── Home/ # Головна сторінка
+│ ├── Articles/ # Статті та окрема стаття
+│ ├── Calendar/ # Календар бджоляра
+│ ├── Diseases/ # Хвороби бджіл
+│ ├── Equipment/ # Обладнання пасічника
+│ └── Forum/ # Форум
+├── data/ # Статичні дані
+├── hooks/ # Власні React хуки
+└── types/ # TypeScript типи
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📱 Адаптивність
+
+Платформа повністю адаптована для мобільних пристроїв:
+
+- На **мобільному** — нижня навігаційна панель
+- На **десктопі** — бічне меню
+
+## 🤝 Внесок у проєкт
+
+Pull requests вітаються! Для великих змін спочатку відкрийте issue для обговорення.
+
+## 📄 Ліцензія
+
+MIT
